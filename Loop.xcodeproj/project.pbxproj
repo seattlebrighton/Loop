@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2EB2BC5D22CF65390090A558 /* SpikeClientUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB2BC5B22CF65390090A558 /* SpikeClientUI.framework */; };
+		2EB2BC5E22CF65390090A558 /* SpikeClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB2BC5C22CF65390090A558 /* SpikeClient.framework */; };
 		43027F0F1DFE0EC900C51989 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F526D5E1DF2459000A04910 /* HKUnit.swift */; };
 		4302F4E11D4E9C8900F0FCAF /* TextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */; };
 		4302F4E31D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */; };
@@ -590,6 +592,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EB2BC5B22CF65390090A558 /* SpikeClientUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpikeClientUI.framework; path = Carthage/Build/iOS/SpikeClientUI.framework; sourceTree = "<group>"; };
+		2EB2BC5C22CF65390090A558 /* SpikeClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpikeClient.framework; path = Carthage/Build/iOS/SpikeClient.framework; sourceTree = "<group>"; };
 		4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewController.swift; sourceTree = "<group>"; };
 		4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsulinDeliveryTableViewController.swift; sourceTree = "<group>"; };
 		430B29892041F54A00BA9F93 /* NSUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaults.swift; sourceTree = "<group>"; };
@@ -1055,6 +1059,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB2BC5D22CF65390090A558 /* SpikeClientUI.framework in Frameworks */,
+				2EB2BC5E22CF65390090A558 /* SpikeClient.framework in Frameworks */,
 				43D9FFD621EAE05D00AF44BF /* LoopCore.framework in Frameworks */,
 				C1E2774822433D7A00354103 /* MKRingProgressView.framework in Frameworks */,
 				892A5D5B222F0D7C008961AB /* LoopTestingKit.framework in Frameworks */,
@@ -1744,6 +1750,8 @@
 		968DCD53F724DE56FFE51920 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2BC5C22CF65390090A558 /* SpikeClient.framework */,
+				2EB2BC5B22CF65390090A558 /* SpikeClientUI.framework */,
 				C1C7F1BF220D675700689850 /* OmniKit.framework */,
 				C1C7F1C0220D675700689850 /* OmniKitUI.framework */,
 				C1E2773D224177C000354103 /* ClockKit.framework */,
@@ -2370,6 +2378,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/MockKitUI.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/LoopTestingKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MKRingProgressView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SpikeClient.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SpikeClientUI.framework",
 			);
 			name = "Copy Frameworks with Carthage";
 			outputPaths = (
@@ -3626,7 +3636,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6Q7ZC8Q56M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LoopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loudnate.LoopTests;
@@ -3641,7 +3651,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6Q7ZC8Q56M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LoopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loudnate.LoopTests;
